@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comitê de Ética em Tecnologia - Jogo de Simulação</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Tela Inicial -->
+    <div id="tela-inicial" class="tela ativa">
+        <div class="container">
+            <h1>Comitê de Ética em Tecnologia</h1>
+            <p class="subtitulo">Jogo de Simulação para Sala de Aula</p>
+            <div class="descricao">
+                <p>Você fará parte de um comitê que deve avaliar se uma inovação tecnológica controversa deve ser aprovada para implementação.</p>
+                <p>Cada participante terá um papel específico com seus próprios objetivos e argumentos.</p>
+            </div>
+            <button class="btn btn-primary" onclick="app.mostrarCenario()">Começar</button>
+        </div>
+    </div>
+
+    <!-- Tela do Cenário -->
+    <div id="tela-cenario" class="tela">
+        <div class="container">
+            <h1>Cenário Tecnológico</h1>
+            <div class="cenario-card">
+                <h2>Sistema de Monitoramento Comportamental Preditivo em Ambientes Urbanos (SMCP-Urban)</h2>
+                
+                <div class="secao">
+                    <h3>Descrição da Inovação</h3>
+                    <p>A empresa TechGuard Solutions desenvolveu o SMCP-Urban, um sistema integrado de câmeras inteligentes com IA que monitora espaços públicos urbanos (praças, terminais de transporte, centros comerciais e vias principais) para prever comportamentos considerados "de risco" antes que crimes ou acidentes ocorram.</p>
+                    <p><strong>O sistema utiliza:</strong></p>
+                    <ul>
+                        <li>Reconhecimento facial em tempo real</li>
+                        <li>Análise de padrões de movimento corporal</li>
+                        <li>Detecção de expressões faciais e tom de voz</li>
+                        <li>Cruzamento com bancos de dados públicos e privados</li>
+                        <li>Algoritmos preditivos treinados com dados históricos de ocorrências policiais</li>
+                    </ul>
+                </div>
+
+                <div class="secao">
+                    <h3>Contexto</h3>
+                    <p>A prefeitura de uma cidade de médio porte (500 mil habitantes) está considerando implementar o sistema em parceria público-privada. A empresa oferece instalação gratuita em troca de acesso aos dados coletados por 10 anos. O contrato prevê cobertura de 70% das áreas públicas da cidade nos próximos 3 anos.</p>
+                </div>
+
+                <div class="secao beneficios">
+                    <h3>Possíveis Benefícios</h3>
+                    <ul>
+                        <li><strong>Segurança preventiva:</strong> Alertas para a polícia antes que crimes ocorram</li>
+                        <li><strong>Resposta rápida a emergências:</strong> Identificação automática de acidentes e situações de perigo</li>
+                        <li><strong>Localização de desaparecidos:</strong> Crianças perdidas, pessoas com Alzheimer</li>
+                        <li><strong>Dados para planejamento urbano:</strong> Análise de fluxos populacionais</li>
+                        <li><strong>Redução de custos policiais:</strong> Patrulhamento mais eficiente</li>
+                        <li><strong>Sensação de segurança:</strong> Moradores se sentindo mais protegidos</li>
+                    </ul>
+                </div>
+
+                <div class="secao riscos">
+                    <h3>Riscos e Dilemas Éticos</h3>
+                    <ul>
+                        <li><strong>Vigilância em massa:</strong> Monitoramento constante sem suspeita prévia</li>
+                        <li><strong>Viés algorítmico:</strong> Discriminação de grupos étnicos e sociais específicos</li>
+                        <li><strong>Presunção de inocência:</strong> Todos tratados como potenciais criminosos</li>
+                        <li><strong>Privacidade:</strong> Dados biométricos coletados sem consentimento explícito</li>
+                        <li><strong>Falsos positivos:</strong> Pessoas inocentes abordadas injustamente</li>
+                        <li><strong>Uso indevido de dados:</strong> Venda, hackeamento ou perseguição política</li>
+                        <li><strong>Sociedade de controle:</strong> Inibição de liberdades e manifestações</li>
+                        <li><strong>Falta de transparência:</strong> Algoritmos proprietários não auditáveis</li>
+                        <li><strong>Dependência tecnológica:</strong> Cidade refém de empresa privada por 10 anos</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="app.mostrarPersonagens()">Ver Personagens</button>
+        </div>
+    </div>
+
+    <!-- Tela de Seleção de Personagens -->
+    <div id="tela-personagens" class="tela">
+        <div class="container">
+            <h1>Escolha seu Personagem</h1>
+            <p class="instrucao">Selecione o papel que você irá interpretar no Comitê de Ética:</p>
+            
+            <div id="grid-personagens" class="grid-personagens">
+                <!-- Personagens serão inseridos aqui via JavaScript -->
+            </div>
+
+            <div class="acoes-personagens">
+                <button class="btn btn-secondary" onclick="app.mostrarCenario()">Voltar ao Cenário</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Detalhes do Personagem -->
+    <div id="tela-detalhes" class="tela">
+        <div class="container">
+            <div id="detalhes-personagem" class="detalhes-card">
+                <!-- Detalhes serão inseridos aqui via JavaScript -->
+            </div>
+            
+            <div class="acoes-detalhes">
+                <button class="btn btn-secondary" onclick="app.mostrarPersonagens()">Voltar aos Personagens</button>
+                <button class="btn btn-primary" onclick="app.mostrarVotacao()">Ir para Votação</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Votação -->
+    <div id="tela-votacao" class="tela">
+        <div class="container">
+            <h1>Hora da Votação</h1>
+            <p class="instrucao">Após o debate, cada membro do comitê deve votar:</p>
+            
+            <div class="opcoes-votacao">
+                <div class="opcao-voto" onclick="app.registrarVoto('aprovar')">
+                    <div class="icone-voto aprovar">✓</div>
+                    <h3>Aprovar</h3>
+                    <p>Autorizar a implementação do sistema SMCP-Urban conforme proposto</p>
+                </div>
+
+                <div class="opcao-voto" onclick="app.registrarVoto('condicional')">
+                    <div class="icone-voto condicional">⚠</div>
+                    <h3>Aprovar com Condições</h3>
+                    <p>Autorizar mediante alterações no contrato e salvaguardas adicionais</p>
+                </div>
+
+                <div class="opcao-voto" onclick="app.registrarVoto('rejeitar')">
+                    <div class="icone-voto rejeitar">✗</div>
+                    <h3>Rejeitar</h3>
+                    <p>Negar a implementação do sistema por riscos éticos inaceitáveis</p>
+                </div>
+            </div>
+
+            <div class="resultados-votacao" id="resultados-votacao" style="display: none;">
+                <h2>Resultados da Votação</h2>
+                <div id="grafico-resultados"></div>
+                <div id="estatisticas-votos"></div>
+            </div>
+
+            <div class="acoes-votacao">
+                <button class="btn btn-secondary" onclick="app.voltarDetalhes()">Voltar</button>
+                <button class="btn btn-primary" onclick="app.mostrarDebriefing()" id="btn-debriefing" style="display: none;">Debriefing Final</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Debriefing -->
+    <div id="tela-debriefing" class="tela">
+        <div class="container">
+            <h1>Debriefing - Reflexões Finais</h1>
+            
+            <div class="debriefing-card">
+                <h2>Questões para Discussão</h2>
+                
+                <div class="questao">
+                    <h3>1. Conflito de Valores</h3>
+                    <p>Quais valores entraram em conflito durante o debate? (segurança vs. privacidade, inovação vs. cautela, eficiência vs. direitos humanos)</p>
+                </div>
+
+                <div class="questao">
+                    <h3>2. Segurança e Privacidade</h3>
+                    <p>É possível conciliar segurança pública e privacidade individual? Como?</p>
+                </div>
+
+                <div class="questao">
+                    <h3>3. Justiça Tecnológica</h3>
+                    <p>Como garantir que tecnologias não amplifiquem desigualdades e discriminações existentes?</p>
+                </div>
+
+                <div class="questao">
+                    <h3>4. Governança Democrática</h3>
+                    <p>Quem deve decidir sobre a implementação de tecnologias que afetam toda a sociedade? Como envolver diferentes vozes?</p>
+                </div>
+
+                <div class="questao">
+                    <h3>5. Transparência e Accountability</h3>
+                    <p>Que mecanismos de transparência e responsabilização são necessários para sistemas de IA em contextos públicos?</p>
+                </div>
+
+                <div class="questao">
+                    <h3>6. Alternativas</h3>
+                    <p>Quais outras formas de promover segurança pública foram mencionadas? São viáveis?</p>
+                </div>
+
+                <div class="questao">
+                    <h3>7. Aprendizados</h3>
+                    <p>O que você aprendeu ao interpretar seu personagem? Sua visão sobre o tema mudou?</p>
+                </div>
+            </div>
+
+            <div class="acoes-debriefing">
+                <button class="btn btn-secondary" onclick="app.mostrarVotacao()">Voltar à Votação</button>
+                <button class="btn btn-primary" onclick="app.reiniciar()">Reiniciar Simulação</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

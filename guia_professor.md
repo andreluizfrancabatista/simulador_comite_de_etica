@@ -188,25 +188,10 @@ Ao final da atividade, espera-se que os alunos sejam capazes de:
 - **Filosofia:** Teorias éticas (utilitarismo vs. deontologia)
 
 ### Tópicos para Aprofundamento
-
-1. **Casos Reais:**
-   - Sistemas de reconhecimento facial em cidades chinesas
-   - Predictive policing em Los Angeles e Chicago
-   - Clearview AI e controvérsias
-   - Ring/Amazon e parcerias com polícia
-   - Projeto de lei sobre IA no Brasil
-
-2. **Conceitos Técnicos:**
-   - Como funciona reconhecimento facial
-   - O que é machine learning e seus limites
-   - Viés nos dados de treinamento
-   - Falsos positivos e falsos negativos
-
-3. **Marcos Legais:**
-   - Lei Geral de Proteção de Dados (LGPD)
-   - Marco Civil da Internet
-   - Regulação de IA na União Europeia
-   - Projetos de lei brasileiros sobre IA
+- Mencionar casos reais relacionados com o cenário simulado
+- Esclarecer conceitos técnicos referentes ao cenário simulado
+- Citar a legislação vigente concernet ao cenário simulado
+- Fornecer materiais de apoio como artigos, vídeos, filmes, séries, podcasts.
 
 ## 🔄 Após a Simulação
 
@@ -228,36 +213,11 @@ Ao final da atividade, espera-se que os alunos sejam capazes de:
    - Estudar códigos de ética profissional (ACM, IEEE)
    - Criar código de ética para desenvolvedores de IA
 
-## 📚 Materiais de Apoio
-
-### Leituras Recomendadas para Alunos
-
-**Artigos Curtos (15-20 min):**
-- "Algorithms of Oppression" - Safiya Noble (resumo)
-- "Weapons of Math Destruction" - Cathy O'Neil (capítulo 1)
-- Reportagens sobre casos brasileiros de tecnologia e vigilância
-
-**Vídeos (20-30 min):**
-- TED Talks sobre viés algorítmico
-- Documentário "Coded Bias"
-- Reportagens investigativas sobre vigilância
-
-**Podcasts:**
-- Episódios sobre ética em IA
-- Entrevistas com pesquisadores da área
-
-### Recursos para o Professor
-
-- **Stanford Encyclopedia of Philosophy:** Ética e Tecnologia
-- **MIT Technology Review:** Seção de IA e Ética
-- **Data & Society Research Institute:** Relatórios sobre impactos sociais
-- **AlgorithmWatch:** Monitoramento de sistemas algorítmicos
-
 ## ⚠️ Cuidados e Sensibilidades
 
 ### Temas Delicados
 
-Este jogo aborda questões que podem ser sensíveis para alguns alunos:
+Os jogos propostos podem abordar questões que podem ser sensíveis para alguns alunos:
 
 - **Racismo e discriminação:** Alguns alunos podem ter experiências pessoais
 - **Violência policial:** Pode haver trauma ou experiências negativas

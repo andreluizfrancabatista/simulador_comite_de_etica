@@ -4,7 +4,7 @@ Aplicação web interativa para simulação de um Comitê de Ética em Tecnologi
 
 ## 📋 Sobre o Projeto
 
-Este jogo de simulação coloca os alunos no papel de diferentes stakeholders que devem avaliar se uma inovação tecnológica controversa deve ser aprovada. O cenário apresentado é o **Sistema de Monitoramento Comportamental Preditivo em Ambientes Urbanos (SMCP-Urban)**, um sistema de vigilância com IA que levanta questões éticas importantes sobre privacidade, segurança, discriminação algorítmica e liberdades civis.
+Este jogo de simulação coloca os alunos no papel de diferentes stakeholders que devem avaliar se uma inovação tecnológica controversa deve ser aprovada. 
 
 ## 🎯 Objetivos Pedagógicos
 
@@ -25,7 +25,7 @@ Este jogo de simulação coloca os alunos no papel de diferentes stakeholders qu
 - Explicar que cada aluno interpretará um personagem com objetivos específicos
 
 ### 3. **Leitura do Cenário (10 minutos)**
-- Alunos leem sobre a tecnologia SMCP-Urban
+- Alunos leem sobre o cenário simulado
 - Conhecem os benefícios e riscos do sistema
 
 ### 4. **Seleção de Personagens (5 minutos)**
@@ -40,13 +40,15 @@ Este jogo de simulação coloca os alunos no papel de diferentes stakeholders qu
 - Professor pode moderar e fazer perguntas provocativas
 
 ### 6. **Votação (5 minutos)**
-- Cada membro vota: Aprovar, Aprovar com Condições ou Rejeitar
-- Sistema exibe resultados em tempo real
+- Cada membro vota: Aprovar, Aprovar com ressalvas ou Rejeitar
+- Professor anuncia resultado da votação
 
 ### 7. **Debriefing (15-20 minutos)**
 - Discussão guiada pelas questões reflexivas
 - Análise dos argumentos apresentados
 - Conexão com conceitos teóricos da disciplina
+- Análise de possíveis melhorias para as próximas implementações
+- Feedback dos alunos sobre a dinâmica (O que pode ser melhorado?)
 
 ## 📂 Estrutura do Projeto
 
@@ -58,20 +60,8 @@ comite-etica-tech/
 ├── scripts.js          # Lógica da aplicação
 ├── README.md           # Este arquivo
 ├── .gitignore          # Arquivos ignorados pelo Git
-│
 └── imagens/            # Imagens dos personagens
-    ├── ceo.png
-    ├── prefeito.png
-    ├── representante_ong.png
-    ├── delegado.png
-    ├── pai_mae.png
-    ├── pesquisador.png
-    ├── comerciante.png
-    ├── ativista.png
-    ├── jornalista.png
-    ├── vereador.png
-    ├── representante_periferia.png
-    └── advogado.png
+
 ```
 
 ## 🚀 Como Usar
@@ -96,40 +86,6 @@ npx http-server
 - Faça upload para GitHub Pages, Netlify, Vercel ou similar
 - Compartilhe o link com os alunos
 
-## 👥 Personagens Disponíveis
-
-1. **CEO da TechGuard Solutions** - Defensor da tecnologia
-2. **Prefeito(a) Municipal** - Equilibrando interesses políticos
-3. **Representante de ONG de Direitos Digitais** - Defensor de privacidade
-4. **Delegado(a) de Polícia** - Perspectiva operacional
-5. **Mãe/Pai de Adolescente** - Preocupações familiares
-6. **Pesquisador(a) em IA e Ética** - Análise técnica
-7. **Comerciante do Centro** - Segurança para negócios
-8. **Ativista de Movimentos Sociais** - Defesa de comunidades vulneráveis
-9. **Jornalista Investigativo(a)** - Transparência e questionamento
-10. **Vereador(a) de Oposição** - Fiscalização e alternativas
-11. **Representante de Comunidade Periférica** - Voz das margens
-12. **Advogado(a) Constitucionalista** - Análise legal
-
-## 🎨 Sobre as Imagens dos Personagens
-
-As imagens devem ser nomeadas exatamente como indicado abaixo e colocadas na pasta `imagens/`:
-
-- `ceo.png`
-- `prefeito.png`
-- `representante_ong.png`
-- `delegado.png`
-- `pai_mae.png`
-- `pesquisador.png`
-- `comerciante.png`
-- `ativista.png`
-- `jornalista.png`
-- `vereador.png`
-- `representante_periferia.png`
-- `advogado.png`
-
-**Formato recomendado:** PNG ou JPG, 400x400px mínimo, fundo transparente ou sólido
-
 **Dica:** Se você não tiver imagens, a aplicação exibirá um ícone padrão (👤) automaticamente.
 
 ## 💡 Sugestões de Uso
@@ -153,54 +109,6 @@ As imagens devem ser nomeadas exatamente como indicado abaixo e colocadas na pas
 - Simular audiência pública com "população" votando
 - Criar relatório final em grupo
 
-## 🔧 Tecnologias Utilizadas
-
-- **HTML5** - Estrutura semântica
-- **CSS3** - Estilização e responsividade
-- **JavaScript (Vanilla)** - Lógica e interatividade
-- **Design Responsivo** - Funciona em desktop, tablet e mobile
-
-## 📖 Temas Abordados
-
-- Ética em Inteligência Artificial
-- Vigilância e Privacidade
-- Viés Algorítmico e Discriminação
-- Segurança Pública vs. Liberdades Civis
-- Transparência e Accountability em Tecnologia
-- Justiça Social e Tecnologia
-- Governança de Dados
-- Participação Democrática em Decisões Tecnológicas
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Você pode:
-
-- Reportar bugs ou problemas
-- Sugerir novos personagens ou cenários
-- Melhorar a interface ou usabilidade
-- Traduzir para outros idiomas
-- Compartilhar experiências de uso em sala de aula
-
 ## 📄 Licença
 
 Este projeto é educacional e de código aberto. Sinta-se livre para usar, modificar e compartilhar com fins pedagógicos.
-
-## ✉️ Contato e Suporte
-
-Para dúvidas, sugestões ou compartilhar sua experiência usando esta ferramenta:
-- Abra uma issue no repositório
-- Entre em contato com o desenvolvedor
-
-## 🎓 Referências e Leituras Recomendadas
-
-- **Noble, S. U.** (2018). *Algorithms of Oppression: How Search Engines Reinforce Racism*
-- **O'Neil, C.** (2016). *Weapons of Math Destruction*
-- **Zuboff, S.** (2019). *The Age of Surveillance Capitalism*
-- **Eubanks, V.** (2018). *Automating Inequality*
-- **Benjamin, R.** (2019). *Race After Technology*
-
----
-
-**Versão:** 1.0  
-**Data:** 2025  
-**Desenvolvido para:** Disciplina Computação e Sociedade

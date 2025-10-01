@@ -44,7 +44,7 @@ Ao final da atividade, espera-se que os alunos sejam capazes de:
 | Tempo | Atividade | Descrição |
 |-------|-----------|-----------|
 | 0-10 min | Introdução | Contextualizar o tema, explicar a dinâmica |
-| 10-20 min | Cenário | Leitura e discussão do caso SMCP-Urban |
+| 10-20 min | Cenário | Leitura e discussão do caso escolhido |
 | 20-25 min | Personagens | Seleção e preparação dos papéis |
 | 25-65 min | Debate | Simulação do Comitê de Ética |
 | 65-70 min | Votação | Registro de votos e resultados |
@@ -145,37 +145,7 @@ Ao final da atividade, espera-se que os alunos sejam capazes de:
 - Usar reações e chat para dinâmica
 - Breakout rooms para preparação em grupos
 
-## 💡 Perguntas para Estimular o Debate
 
-### Sobre Viés e Discriminação
-
-- "Como garantir que o algoritmo não discrimine grupos específicos?"
-- "Se o sistema foi treinado com dados históricos de uma polícia acusada de racismo, o que pode acontecer?"
-- "Quem decide o que é 'comportamento suspeito'?"
-
-### Sobre Privacidade
-
-- "Vocês aceitariam ser monitorados 24/7 para ter mais segurança?"
-- "Qual a diferença entre este sistema e câmeras de segurança comuns?"
-- "Dados biométricos podem ser roubados. E se vazarem?"
-
-### Sobre Poder e Controle
-
-- "Quem controla quem tem acesso aos dados?"
-- "E se um político autoritário ganhar a eleição e usar isso contra opositores?"
-- "A empresa pode vender esses dados? Para quem?"
-
-### Sobre Alternativas
-
-- "Existem outras formas de aumentar a segurança sem vigilância?"
-- "Se investíssemos o mesmo dinheiro em educação, funcionaria?"
-- "Que salvaguardas tornariam este sistema aceitável?"
-
-### Sobre Justiça
-
-- "Quem se beneficia mais com este sistema? Quem é mais prejudicado?"
-- "A segurança de uns pode vir à custa da liberdade de outros?"
-- "Como envolver a população na decisão?"
 
 ## 📖 Conexões Curriculares
 

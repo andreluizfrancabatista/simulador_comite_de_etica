@@ -53,14 +53,18 @@ Este jogo de simulação coloca os alunos no papel de diferentes stakeholders qu
 ## 📂 Estrutura do Projeto
 
 ```
-comite-etica-tech/
+cenario-simulado/
 │
-├── index.html          # Estrutura HTML da aplicação
-├── estilos.css         # Estilos e design responsivo
-├── scripts.js          # Lógica da aplicação
-├── README.md           # Este arquivo
-├── .gitignore          # Arquivos ignorados pelo Git
-└── imagens/            # Imagens dos personagens
+├── index.html              # Estrutura HTML da aplicação
+├── estilos.css             # Estilos e design responsivo
+├── scripts.js              # Lógica da aplicação
+├── README.md               # Este arquivo
+├── guia_professor.md       # Guia do professor
+├── customizacao.md         # Guia de customização da atividade
+├── atividade_<num>.md      # Detalhes específicos de um cenário simulado
+├── rubrica_avaliacao.md    # Avaliação da participação do aluno
+├── .gitignore              # Arquivos ignorados pelo Git
+└── imagens/                # Imagens dos personagens
 
 ```
 
